@@ -1,0 +1,568 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crave & Co. | Deliciously Different</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="#" class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-utensils"></i></span>
+                Crave<span class="logo-highlight">&</span>Co.
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="cart-button" id="cartButton">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+
+                <a href="#menu" class="btn btn-primary nav-order-btn">
+                    Order Now <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+
+            <div class="hero-text">
+                <span class="eyebrow">
+                    <i class="fa-solid fa-fire"></i>
+                    Freshly made. Always delicious.
+                </span>
+
+                <h1>
+                    Good food.<br>
+                    <span>Good mood.</span><br>
+                    Great moments.
+                </h1>
+
+                <p>
+                    Food made with love, served with a smile.
+                    Discover your new favorite flavor with every bite.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">
+                        Explore Menu <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="#about" class="btn btn-outline">
+                        <i class="fa-solid fa-play"></i> Our Story
+                    </a>
+                </div>
+
+                <div class="hero-info">
+                    <div class="rating">
+                        <div class="rating-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <strong>4.9/5</strong>
+                        <span>Happy food lovers</span>
+                    </div>
+
+                    <div class="hero-divider"></div>
+
+                    <div class="delivery-info">
+                        <div class="delivery-icon">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <div>
+                            <strong>25–35 min</strong>
+                            <span>Fast delivery</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="hero-image-main">
+                    <img
+                        src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1000&q=85"
+                        alt="Delicious gourmet burger">
+                </div>
+
+                <div class="floating-card floating-card-top">
+                    <span class="floating-icon">🔥</span>
+                    <div>
+                        <strong>Chef's Special</strong>
+                        <span>Made fresh today</span>
+                    </div>
+                </div>
+
+                <div class="floating-card floating-card-bottom">
+                    <div class="mini-avatars">
+                        <span>😊</span>
+                        <span>😋</span>
+                        <span>😍</span>
+                    </div>
+                    <div>
+                        <strong>2,000+</strong>
+                        <span>Food lovers</span>
+                    </div>
+                </div>
+
+                <div class="hero-decoration"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories section-padding">
+        <div class="container">
+
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">Explore our delicious world</span>
+                    <h2>What are you <span>craving?</span></h2>
+                </div>
+                <p>Something delicious for every mood.</p>
+            </div>
+
+            <div class="category-grid">
+
+                <button class="category-card active" data-category="all">
+                    <div class="category-icon">🍽️</div>
+                    <span>All Foods</span>
+                </button>
+
+                <button class="category-card" data-category="burger">
+                    <div class="category-icon">🍔</div>
+                    <span>Burgers</span>
+                </button>
+
+                <button class="category-card" data-category="pizza">
+                    <div class="category-icon">🍕</div>
+                    <span>Pizza</span>
+                </button>
+
+                <button class="category-card" data-category="pasta">
+                    <div class="category-icon">🍝</div>
+                    <span>Pasta</span>
+                </button>
+
+                <button class="category-card" data-category="salad">
+                    <div class="category-icon">🥗</div>
+                    <span>Healthy</span>
+                </button>
+
+                <button class="category-card" data-category="dessert">
+                    <div class="category-icon">🍰</div>
+            <span>Desserts</span>
+                </button>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Menu -->
+    <section class="menu-section section-padding" id="menu">
+        <div class="container">
+
+            <div class="section-heading menu-heading">
+                <div>
+                    <span class="eyebrow">Made with passion</span>
+                    <h2>Our popular <span>menu</span></h2>
+                </div>
+
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="searchInput" placeholder="Search your favorite food...">
+                </div>
+            </div>
+
+            <div class="food-grid" id="foodGrid">
+
+                <!-- Food Card 1 -->
+                <article class="food-card" data-category="burger" data-name="classic cheeseburger">
+                    <div class="food-image">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80" alt="Classic cheeseburger">
+                        <span class="food-badge">Bestseller</span>
+                        <button class="favorite-button" aria-label="Add to favorites">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="food-details">
+                        <div class="food-title-row">
+                            <h3>Classic Cheeseburger</h3>
+                            <span class="food-rating"><i class="fa-solid fa-star"></i> 4.9</span>
+                        </div>
+                        <p>Juicy beef, cheddar cheese, lettuce and our secret sauce.</p>
+                        <div class="food-footer">
+                            <strong class="price">₹249</strong>
+                            <button class="add-button" data-name="Classic Cheeseburger" data-price="249">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Food Card 2 -->
+                <article class="food-card" data-category="pizza" data-name="margherita pizza">
+                    <div class="food-image">
+                        <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=700&q=80" alt="Margherita pizza">
+                        <span class="food-badge">Popular</span>
+                        <button class="favorite-button" aria-label="Add to favorites">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="food-details">
+                        <div class="food-title-row">
+                            <h3>Margherita Pizza</h3>
+                            <span class="food-rating"><i class="fa-solid fa-star"></i> 4.8</span>
+                        </div>
+                        <p>Classic Italian pizza with mozzarella, basil and tomato.</p>
+                        <div class="food-footer">
+                            <strong class="price">₹299</strong>
+                            <button class="add-button" data-name="Margherita Pizza" data-price="299">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Food Card 3 -->
+                <article class="food-card" data-category="pasta" data-name="creamy alfredo pasta">
+                    <div class="food-image">
+                        <img src="https://images.unsplash.com/photo-1645112411341-6c4fd023714a?auto=format&fit=crop&w=700&q=80" alt="Creamy Alfredo pasta">
+                        <button class="favorite-button" aria-label="Add to favorites">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="food-details">
+                        <div class="food-title-row">
+                            <h3>Creamy Alfredo Pasta</h3>
+                            <span class="food-rating"><i class="fa-solid fa-star"></i> 4.7</span>
+                        </div>
+                        <p>Rich creamy sauce, parmesan and perfectly cooked pasta.</p>
+                        <div class="food-footer">
+                            <strong class="price">₹279</strong>
+                            <button class="add-button" data-name="Creamy Alfredo Pasta" data-price="279">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Food Card 4 -->
+                <article class="food-card" data-category="salad" data-name="fresh garden salad">
+                    <div class="food-image">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=700&q=80" alt="Fresh garden salad">
+                        <span class="food-badge healthy-badge">Healthy</span>
+                        <button class="favorite-button" aria-label="Add to favorites">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="food-details">
+                        <div class="food-title-row">
+                            <h3>Fresh Garden Salad</h3>
+                            <span class="food-rating"><i class="fa-solid fa-star"></i> 4.8</span>
+                        </div>
+                        <p>Fresh greens, cherry tomatoes, avocado and lemon dressing.</p>
+                        <div class="food-footer">
+                            <strong class="price">₹199</strong>
+                            <button class="add-button" data-name="Fresh Garden Salad" data-price="199">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Food Card 5 -->
+                <article class="food-card" data-category="dessert" data-name="chocolate lava cake">
+                    <div class="food-image">
+                        <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=700&q=80" alt="Chocolate lava cake">
+                        <span class="food-badge">Sweet Treat</span>
+                        <button class="favorite-button" aria-label="Add to favorites">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="food-details">
+                        <div class="food-title-row">
+                            <h3>Chocolate Lava Cake</h3>
+                            <span class="food-rating"><i class="fa-solid fa-star"></i> 5.0</span>
+                        </div>
+                        <p>Warm chocolate cake with a gooey molten center.</p>
+                        <div class="food-footer">
+                            <strong class="price">₹179</strong>
+                            <button class="add-button" data-name="Chocolate Lava Cake" data-price="179">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Food Card 6 -->
+                <article class="food-card" data-category="burger" data-name="crispy chicken burger">
+                    <div class="food-image">
+                        <img src="https://images.unsplash.com/photo-1606755962776-9c4f9b6a5b9e?auto=format&fit=crop&w=700&q=80" alt="Crispy chicken burger">
+                        <span class="food-badge">Chef's Choice</span>
+                        <button class="favorite-button" aria-label="Add to favorites">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="food-details">
+                        <div class="food-title-row">
+                            <h3>Crispy Chicken Burger</h3>
+                            <span class="food-rating"><i class="fa-solid fa-star"></i> 4.9</span>
+                        </div>
+                        <p>Crispy chicken, creamy mayo, pickles and fresh lettuce.</p>
+                        <div class="food-footer">
+                            <strong class="price">₹269</strong>
+                            <button class="add-button" data-name="Crispy Chicken Burger" data-price="269">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <p class="no-results" id="noResults">
+                No delicious matches found. Try another search!
+            </p>
+
+            <div class="menu-bottom">
+                <a href="#menu" class="btn btn-outline">
+                    Explore All Menu <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section section-padding" id="about">
+        <div class="container about-container">
+
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1000&q=85" alt="Restaurant food preparation">
+                <div class="experience-card">
+                    <strong>10+</strong>
+                    <span>Years of serving happiness</span>
+                </div>
+            </div>
+
+            <div class="about-content">
+                <span class="eyebrow">Our story</span>
+                <h2>More than food.<br><span>It's an experience.</span></h2>
+
+                <p>
+                    At Crave & Co., we believe great food brings people together.
+                    Every ingredient is carefully selected, every dish freshly
+                    prepared, and every experience crafted with love.
+                </p>
+
+                <p>
+                    From the first bite to the last, we want you to feel
+                    the passion behind everything we serve.
+                </p>
+
+                <div class="about-features">
+                    <div class="feature">
+                        <i class="fa-solid fa-leaf"></i>
+                        <span>Fresh Ingredients</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fa-solid fa-heart"></i>
+                        <span>Made With Love</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fa-solid fa-chef-hat"></i>
+                        <span>Expert Chefs</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fa-solid fa-truck-fast"></i>
+                        <span>Quick Delivery</span>
+                    </div>
+                </div>
+
+                <a href="#menu" class="btn btn-primary">
+                    Discover Our Menu <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="reviews-section section-padding" id="reviews">
+        <div class="container">
+
+            <div class="section-heading center-heading">
+                <div>
+                    <span class="eyebrow">Happy customers, happy us</span>
+                    <h2>Love served <span>every day</span></h2>
+                </div>
+            </div>
+
+            <div class="review-grid">
+
+                <article class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p>
+                        "Honestly one of the best burgers I've had!
+                        Everything was fresh, the flavors were amazing
+                        and the delivery was super quick."
+                    </p>
+                    <div class="review-author">
+                        <div class="review-avatar avatar-1">A</div>
+                        <div>
+                            <strong>Arjun Mehta</strong>
+                            <span>Food enthusiast</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="review-card featured-review">
+                    <div class="review-stars">★★★★★</div>
+                    <p>
+                        "The pasta is absolutely incredible. You can tell
+                        the ingredients are fresh. Crave & Co. is now
+                        my go-to place for comfort food!"
+                    </p>
+                    <div class="review-author">
+                        <div class="review-avatar avatar-2">S</div>
+                        <div>
+                            <strong>Sarah Williams</strong>
+                            <span>Regular customer</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p>
+                        "Beautiful presentation, wonderful taste and
+                        friendly service. The chocolate lava cake
+                        deserves a special mention!"
+                    </p>
+                    <div class="review-author">
+                        <div class="review-avatar avatar-3">R</div>
+                        <div>
+                            <strong>Rahul Sharma</strong>
+                            <span>Dessert lover</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+        <div class="container newsletter-container">
+            <div>
+                <span class="eyebrow">Something delicious is coming</span>
+                <h2>Stay hungry. Stay updated.</h2>
+                <p>Get exclusive offers and delicious updates straight to your inbox.</p>
+            </div>
+
+            <form class="newsletter-form" id="newsletterForm">
+                <input type="email" id="emailInput" placeholder="Enter your email address" required>
+                <button type="submit" class="btn btn-primary">
+                    Subscribe <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <span class="logo-icon"><i class="fa-solid fa-utensils"></i></span>
+                    Crave<span class="logo-highlight">&</span>Co.
+                </a>
+                <p>Good food, great people, unforgettable moments.</p>
+
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="#home">Home</a>
+                <a href="#menu">Our Menu</a>
+                <a href="#about">About Us</a>
+                <a href="#reviews">Reviews</a>
+            </div>
+
+            <div class="footer-links">
+                <h4>Opening Hours</h4>
+                <p>Monday – Friday</p>
+                <span>11:00 AM – 10:00 PM</span>
+                <p>Saturday – Sunday</p>
+                <span>10:00 AM – 11:00 PM</span>
+            </div>
+
+            <div class="footer-links">
+                <h4>Contact Us</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Bengaluru, India</p>
+                <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+                <p><i class="fa-solid fa-envelope"></i> hello@craveandco.com</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© 2026 Crave & Co. All rights reserved.</p>
+                <p>Made with <i class="fa-solid fa-heart"></i> and lots of flavor.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <i class="fa-solid fa-circle-check"></i>
+        <span id="toastMessage">Item added to cart!</span>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
